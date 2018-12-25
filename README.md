@@ -22,10 +22,10 @@ Since the on-premise server space provided by the business school was behind fir
 
  The database can be accessed using the details as follows from the Microsoft Management Studio 2012:
 
- 	Server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com; 1433
+Server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com; 1433
 Database=Group_Project_BUDT758Y
-UID=thaque786
-PASSWRD=tariq214H
+UID=XXXX
+PASSWRD=XXXX
 
 
 
