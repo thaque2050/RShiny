@@ -158,7 +158,7 @@ server<-function(input,output){
   
   
   output$customer_list<-renderDataTable({
-    dbhandle1 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle1 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     sqlcot1<-'SELECT * FROM Brief_BusinessDetails_V'
     res <- sqlQuery(dbhandle1, sqlcot1)
     odbcClose(dbhandle1)
@@ -171,7 +171,7 @@ server<-function(input,output){
   
   output$Word_Network_Positive<-renderPlot({
     
-    dbhandle2 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle2 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     sqlcot2<-'SELECT * FROM Business_Reviews_Details_V'
     rtext <- sqlQuery(dbhandle2, sqlcot2)%>%filter(str_detect(businessId,input$customer_businessId2))
     odbcClose(dbhandle2)
@@ -236,7 +236,7 @@ server<-function(input,output){
   
   output$Review_Sentiments<-renderPlotly({
     
-    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     sqlcot3<-'SELECT * FROM Business_Reviews_Details_V'
     
     bId<-input$customer_businessId2
@@ -289,7 +289,7 @@ server<-function(input,output){
   
   output$Review_Sentiments2<-renderPlotly({
     
-    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     sqlcot3<-'SELECT * FROM Business_Reviews_Details_V'
     
     bId<-input$customer_businessId2
@@ -327,7 +327,7 @@ server<-function(input,output){
   
   output$Leaflet_Customers<-renderLeaflet({
     
-    dbhandle4 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle4 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     a<-'SELECT * FROM Competitor_Business_Details_V'
     rtext4 <- sqlQuery(dbhandle4, a)
     odbcClose(dbhandle4)
@@ -391,7 +391,7 @@ server<-function(input,output){
   
   output$Word_Network_Positive_competitors<-renderPlot({
     
-    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle3 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     a<-'SELECT * FROM Business_Competitor_Word_V'
     rtext2 <- sqlQuery(dbhandle3, a)
     odbcClose(dbhandle3)
@@ -467,7 +467,7 @@ server<-function(input,output){
   
   output$Review_Sentiments_competitors<-renderPlot({
     
-    dbhandle4 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle4 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     a<-'SELECT * FROM Competitor_Business_Details_V'
     rtext4 <- sqlQuery(dbhandle4, a)
     odbcClose(dbhandle4)
@@ -607,7 +607,7 @@ server<-function(input,output){
     
     
     
-    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     
     res2<-sqlQuery(dbhandle5,'SELECT COUNT(*) FROM P_Business')
     
@@ -625,7 +625,7 @@ server<-function(input,output){
   
   query13 <- eventReactive(input$insert_data24, {
     
-    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXX;pwd=XXXX')
     res3<-sqlQuery(dbhandle5,'SELECT COUNT(*) FROM P_Business')
     odbcClose(dbhandle5)
     res3
@@ -653,7 +653,7 @@ server<-function(input,output){
     BID2<-input$businessId3
 #    BID2<-'PfOCPjBrlQAnz__NXj9h_w222'
     
-    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=thaque786;pwd=tariq214H')
+    dbhandle5 <- odbcDriverConnect('Driver=FreeTDS;TDS_Version=7.2;server=thaque2050.cgz0la30vrak.us-east-2.rds.amazonaws.com;port=1433;database=Group_Project_BUDT758Y;uid=XXXXX;pwd=XXXX')
     
     query1<-paste("SELECT COUNT(*) FROM P_BusinessCategory WHERE businessId= ","'",BID2,"'",sep = "")
     res1<-sqlQuery(dbhandle5,query1)
